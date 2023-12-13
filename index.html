@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         /* Add your CSS styles here */
-        body {
+       body {
             font-family: Futura ;
             margin: 0;
             padding: 0;
@@ -13,7 +13,7 @@
             background-color: #283F6A
         }
       
-      img {
+       img {
           	width: 38%;
 						margin-top: 20px;
 						display: block; 
@@ -26,11 +26,11 @@
             text-align: center;
         }
 
-        nav a {
+      nav a {
             color: #ffff;
             text-decoration: none;
             padding: 0.5em 2.5em;
-            margin: 0 0.5em;
+            margin: 0.5em;
         }
 
         nav a:hover {
@@ -41,6 +41,15 @@
             font-family: Inria;
             color: #fff;
             padding: 1em;
+        }
+      
+      .floating-text {
+            position: absolute;
+            top: 30%; 
+            left: 38%; 
+            transform: translate(-50%, -50%); 
+            z-index: 2; 
+            text-align: center; 
         }
       
       .globe-image {
@@ -73,12 +82,14 @@
         
     </style>
 </head>
-<body>
+  
+  <body>
     <nav>
-       <img class="logo-image" src="logo.png" alt="logo"> 
+<!-- personal and social logos -->
+      <img class="logo-image" src="logo.png" alt="logo"> 
        <img class="instagram" src="instagram.png" alt="instagram logo">
        <img class="tiktok" src="tiktok.png" alt="tiktok logo">
-
+<!-- navigation redirections -->
         <a href="#">HOME</a>
         <a href="#">CROATIA</a>
         <a href="#">TORONTO</a>
@@ -88,9 +99,11 @@
     </nav>
 
      <main>
+<!-- picture of me, overlap text & globe -->
       <img src="pictureofme.png" alt="picture of me">
-       <p>TRAVEL SCRAPBOOK</p>
-       <p>MIREILLE BOTROS</p>
+      <div class="floating-text">
+          <p>TRAVEL SCRAPBOOK</p>
+          <p>MIREILLE BOTROS</p> </div>
        <img class="globe-image" src="globe.png" alt="picture of globe"> 
     </main>
 
