@@ -20,13 +20,13 @@
       	} 
 
         nav {
-            font-size: 10px;
+            font-size: 0.9vw;
             background-color: #162437;
             padding: 20px;
             text-align: center;
         }
 
-      nav a {
+       nav a {
             color: #ffff;
             text-decoration: none;
             padding: 0.5em 2.5em;
@@ -41,17 +41,8 @@
             font-family: Inria;
             color: #fff;
             padding: 1em;
-          	font-size: 16px;
+						font-size: 1.5vw;
           	line-height: 7px;
-        }
-      
-      .floating-text {
-            position: absolute;
-            top: 30%; 
-            left: 38%; 
-            transform: translate(-50%, -50%); 
-            z-index: 2; 
-            text-align: center; 
         }
       
       .globe-image {
@@ -61,7 +52,7 @@
             right: 0px; 
         }
       
-      .logo-image {
+      .logo {
             position: absolute;
             width: 38px;  
         		top: -12px;
@@ -81,6 +72,22 @@
         		top: 0px;
             right: 75px; 
       }
+      
+        .collage{
+        	position: relative;
+       		width: 100%; 
+      	  display: block; 
+      }   
+  
+          .floating-text {
+            position: absolute;
+            top: 40%; 
+            left: 38%; 
+            transform: translate(-50%, -50%); 
+            z-index: 2; 
+            text-align: center; 
+        }
+      
         
     </style>
 </head>
@@ -88,7 +95,7 @@
   <body>
     <nav>
 <!-- personal and social logos -->
-      <img class="logo-image" src="logo.png" alt="logo"> 
+      <img class="logo" src="logo.png" alt="logo"> 
        <img class="instagram" src="instagram.png" alt="instagram logo">
        <img class="tiktok" src="tiktok.png" alt="tiktok logo">
 <!-- navigation redirections -->
@@ -99,13 +106,15 @@
         <a href="#">EGYPT</a>
         <a href="#">GREECE</a>
     </nav>
-    
+  
      <main>
 <!-- picture of me, overlap text & globe -->
-      <img src="pictureofme.png" alt="picture of me">
+      <div class="collage"> 
+       <img src="pictureofme.png" alt="picture of me">
       <div class="floating-text">
           <p>TRAVEL SCRAPBOOK</p>
           <p>MIREILLE BOTROS</p> </div>
+       </div>
        <img class="globe-image" src="globe.png" alt="picture of globe"> 
     </main>
 
