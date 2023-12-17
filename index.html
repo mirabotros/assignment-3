@@ -3,124 +3,120 @@
   <head>
     <meta charset="utc-8">
     <style>
-/* CSS styling */
-       body {
-            font-family: Futura ;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #283F6A
-        }
-      
-       img {
-          	width: 38%;
-						margin-top: 20px;
-						display: block; 
-      	} 
+      /* CSS styling */
+      body {
+        font-family: Futura;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #283F6A
+      }
 
-        nav {
-            font-size: 0.9vw;
-            background-color: #162437;
-            padding: 20px;
-            text-align: center;
-        }
+      img {
+        width: 38%;
+        margin-top: 20px;
+        display: block;
+      }
 
-       nav a {
-            color: #ffff;
-            text-decoration: none;
-            padding: 0.5em 2.5em;
-            margin: 0.5em;
-        }
+      nav {
+        font-size: 0.9vw;
+        background-color: #162437;
+        padding: 20px;
+        text-align: center;
+      }
 
-        nav a.hoverable:hover {
-            background-color: #777;
-        }
+      nav a {
+        color: #ffff;
+        text-decoration: none;
+        padding: 0.5em 2.5em;
+        margin: 0.5em;
+      }
 
-        main {
-            font-family: Inria;
-            color: #fff;
-            padding: 1em;
-						font-size: 1.5vw;
-          	line-height: 7px;
-        }
-      
-/* for socials */
+      nav a.hoverable:hover {
+        background-color: #777;
+      }
 
-      
+      main {
+        font-family: Inria;
+        color: #fff;
+        padding: 1em;
+        font-size: 1.5vw;
+        line-height: 7px;
+      }
+
+      /* for socials */
       .logo {
-            position: absolute;
-            width: 38px;  
-        		top: -12px;
-            left: 15px; 
-        }
-      
+        position: absolute;
+        width: 38px;
+        top: -12px;
+        left: 15px;
+      }
+
       .instagram {
-        		position: absolute;
-            width: 50px;  
-        		top: -10px;
-            right: -15px; 
+        position: absolute;
+        width: 50px;
+        top: -10px;
+        right: -15px;
       }
 
       .tiktok {
-        		position: absolute;
-            width: 46px;  
-        		top: -9px;
-            right: 24px; 
+        position: absolute;
+        width: 46px;
+        top: -9px;
+        right: 24px;
       }
-      
-/* for pictures and text */     
-      
-    	  .globe-image {
-            position: absolute;
-            width: 65%;  
-        		bottom: 0px;
-            right: 0px; 
-        }
 
-        .collage{
-        	position: relative;
-       		width: 100%; 
-      	  display: block; 
-      }   
-  
-          .floating-text {
-            position: absolute;
-            top: 40%; 
-            left: 38%; 
-            transform: translate(-50%, -50%); 
-            z-index: 2; 
-            text-align: center; 
-        }
-      
-        
+      /* for pictures and text */
+      .globe-image {
+        position: absolute;
+        width: 65%;
+        bottom: 0px;
+        right: 0px;
+      }
+
+      .collage {
+        position: relative;
+        width: 100%;
+        display: block;
+      }
+
+      .floating-text {
+        position: absolute;
+        top: 40%;
+        left: 38%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        text-align: center;
+      }
     </style>
-</head>
+  </head>
   <body>
     <nav>
-<!-- personal and social logos -->
-      <img class="logo" src="logo.png" alt="logo"> 
-      <a  href="https://www.instagram.com/mireillebotros/" class="instagram"><img src="instagram.png" alt="instagram logo"></a>
-      <a href="https://www.tiktok.com/@mirabotros" class="tiktok"><img src="tiktok.png" alt="tiktok logo" ></a>
-<!-- navigation redirections -->
-        <a href="#" class="hoverable">HOME</a>
-        <a href="#" class="hoverable">CROATIA</a>
-        <a href="#" class="hoverable">TORONTO</a>
-				<a href="#" class="hoverable">LEBANON</a>
-        <a href="#" class="hoverable">EGYPT</a>
-        <a href="#" class="hoverable">GREECE</a>
+      <!-- personal and social logos -->
+      <img class="logo" src="logo.png" alt="logo">
+      <a href="https://www.instagram.com/mireillebotros/" class="instagram"><img src="instagram.png" alt="instagram logo"></a>
+      <a href="https://www.tiktok.com/@mirabotros" class="tiktok"><img src="tiktok.png" alt="tiktok logo"></a>
+      <!-- navigation redirections -->
+      <a href="#" class="hoverable">HOME</a>
+      <a href="./croatia.html" class="hoverable">CROATIA</a>
+      <a href="#" class="hoverable">TORONTO</a>
+      <a href="#" class="hoverable">LEBANON</a>
+      <a href="#" class="hoverable">EGYPT</a>
+      <a href="#" class="hoverable">GREECE</a>
     </nav>
-  
-     <main>
-<!-- picture of me, overlap text & globe -->
-      <div class="collage"> 
-       <img src="pictureofme.png" alt="picture of me">
-      <div class="floating-text">
+
+    <main>
+      <!-- picture of me, overlap text & globe -->
+      <div class="collage">
+        <img src="pictureofme.png" alt="picture of me">
+        <div class="floating-text">
           <p>TRAVEL SCRAPBOOK</p>
-          <p>MIREILLE BOTROS</p> 
-					<a href="mailto:m3botros@uwaterloo.ca" style="color: white;">Email Me!</a></div>
-       </div>
-       <img class="globe-image" src="globe.png" alt="picture of globe"> 
+          <p>MIREILLE BOTROS</p>
+          <a href="mailto:m3botros@uwaterloo.ca" style="color: white;">Email Me!</a>
+        </div>
+      </div>
+      <img class="globe-image" src="globe.png" alt="picture of globe">
     </main>
   </body>
-  
+
 </html>
