@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="eng-ca">
+  <head>
+    <meta charset="utc-8">
     <style>
         /* Add your CSS styles here */
        body {
@@ -33,7 +32,7 @@
             margin: 0.5em;
         }
 
-        nav a:hover {
+        nav a.hoverable:hover {
             background-color: #777;
         }
 
@@ -61,15 +60,15 @@
       
       .instagram {
         		position: absolute;
-            width: 20px;  
-        		top: -2px;
-            right: 35px; 
+            width: 50px;  
+        		top: -9px;
+            right: -12px; 
       }
-      
+
       .tiktok {
         		position: absolute;
-            width: 17px;  
-        		top: 0px;
+            width: 18px;  
+        		top: 1px;
             right: 75px; 
       }
       
@@ -91,20 +90,19 @@
         
     </style>
 </head>
-  
   <body>
     <nav>
 <!-- personal and social logos -->
       <img class="logo" src="logo.png" alt="logo"> 
-       <img class="instagram" src="instagram.png" alt="instagram logo">
-       <img class="tiktok" src="tiktok.png" alt="tiktok logo">
+       <a  href="https://www.instagram.com/mireillebotros/" class="instagram"><img src="instagram.png" alt="instagram logo"></a>
+      <a href="https://www.tiktok.com/@mirabotros"><img src="tiktok.png" alt="tiktok logo" class="tiktok"></a>
 <!-- navigation redirections -->
-        <a href="#">HOME</a>
-        <a href="#">CROATIA</a>
-        <a href="#">TORONTO</a>
-        <a href="#">LEBANON</a>
-        <a href="#">EGYPT</a>
-        <a href="#">GREECE</a>
+        <a href="#" class="hoverable">HOME</a>
+        <a href="#" class="hoverable">CROATIA</a>
+        <a href="#" class="hoverable">TORONTO</a>
+				<a href="#" class="hoverable">LEBANON</a>
+        <a href="#" class="hoverable">EGYPT</a>
+        <a href="#" class="hoverable">GREECE</a>
     </nav>
   
      <main>
