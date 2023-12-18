@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="eng-ca">
+  <head>
+    <meta charset="utc-8">
+    <style>
+      /* CSS styling */
+      body {
+        font-family: Futura;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #283F6A
+      }
+
+      img {
+        width: 38%;
+        margin-top: 20px;
+        display: block;
+      }
+
+      nav {
+        font-size: 0.9vw;
+        background-color: #162437;
+        padding: 20px;
+        text-align: center;
+      }
+
+      nav a {
+        color: #ffff;
+        text-decoration: none;
+        padding: 0.5em 2.5em;
+        margin: 0.5em;
+      }
+
+      nav a.hoverable:hover {
+        background-color: #777;
+      }
+
+      main {
+        font-family: Inria;
+        color: #fff;
+        padding: 1em;
+        font-size: 1.5vw;
+        line-height: 7px;
+      }
+
+      /* styling used for all pages*/
+      .page {
+        display: none;
+      }
+
+      .logo {
+        position: absolute;
+        width: 38px;
+        top: -12px;
+        left: 15px;
+      }
+
+      .instagram {
+        position: absolute;
+        width: 50px;
+        top: -10px;
+        right: -15px;
+      }
+
+      .tiktok {
+        position: absolute;
+        width: 46px;
+        top: -9px;
+        right: 24px;
+      }
+
+      .div-spacer {
+        height: 7vw;
+      }
+
+      
+      
+      /* for pictures and text home */
+      #home.page {
+        /* comment */
+      }
+
+      .globe-image {
+        position: absolute;
+        width: 65%;
+        bottom: 0px;
+        right: 0px;
+      }
+
+      .collagehome {
+        position: relative;
+        width: 100%;
+        display: block;
+      }
+
+      .floating-texthome {
+        position: absolute;
+        top: 40%;
+        left: 38%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        text-align: center;
+      }
+
+
+      /* for pictures and text croatia */
+
+      #croatia.page {
+        text-align: center;
+      }
+
+      .collagecroatia {
+        position: relative;
+        width: 60%;
+        margin-top: 3%;
+        margin-left: 23%;
+        display: block;
+      }
+
+      .croatiacover {
+        position: relative;
+        width: 90%;
+        display: block;
+      }
+
+      /* for text  */
+      .floating-textcroatia {
+        position: absolute;
+        writing-mode: vertical-lr;
+        font-size: 1.2vw;
+        line-height: 4px;
+        bottom: 30%;
+        left: 54%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        text-align: center;
+      }
+
+      .biocroatia1 {
+        position: absolute;
+        font-size: 1.2vw;
+        line-height: 4px;
+        top: 20%;
+        left: 55%;
+        transform: translate(-10%, -50%);
+        z-index: 2;
+        text-align: center;
+      }
+
+      .biocroatia2 {
+        position: absolute;
+        font-size: 1.2vw;
+        line-height: 4px;
+        top: 2%;
+        left: 23%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        text-align: center;
+      }
+
+      /* for pictures and text toronto */
+
+      #toronto.page {
+        text-align: center;
+      }
+
+      .collagetoronto {
+        position: relative;
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 18%;
+        display: block;
+      }
+
+      .torontocover {
+        position: relative;
+        width: 60%;
+        display: block;
+      }
+
+      /* for text  */
+      .floating-texttoronto {
+        position: absolute;
+        font-size: 1.2vw;
+        line-height: 4px;
+        top: 76%;
+        left: 33%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        text-align: center;
+      }
+
+      .biotoronto {
+        position: absolute;
+        font-size: 1.2vw;
+        line-height: 4px;
+        left: 16%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        text-align: center;
+      }
+
+      /* for pictures and text lebanon */
+
+      #lebanon.page {
+        text-align: center;
+      }
+
+      .collagelebanon {
+        position: relative;
+        width: 78%;
+        margin-top: 50px;
+        margin-left: 23%;
+        display: block;
+      }
+
+      .lebanoncover {
+        position: relative;
+        width: 60%;
+        display: block;
+      }
+
+      .lebanon2 {
+        position: relative;
+        width: 70%;
+        margin-top: -18%;
+        margin-left: -43%;
+        display: block;
+      }
+
+      .lebanon3 {
+        position: relative;
+        width: 80%;
+        margin-left: -10%;
+        display: block;
+      }
+
+      /* for text  */
+      .floating-textlebanon {
+        position: absolute;
+        writing-mode: vertical-lr;
+        font-size: 1.2vw;
+        line-height: 4px;
+        top: 19%;
+        left: 51%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        text-align: center;
+      }
+
+      .biolebanon {
+        position: absolute;
+        font-size: 1.2vw;
+        line-height: 4px;
+        left: 56%;
+        transform: translate(-40%, -50%);
+        z-index: 2;
+        text-align: center;
+      }
+
+      /* for pictures and text egypt */
+
+      #egypt.page {
+        text-align: center;
+      }
+
+      .collageegypt {
+        position: relative;
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 18%;
+        display: block;
+      }
+
+      .egyptcover {
+        position: relative;
+        width: 60%;
+        display: block;
+      }
+
+      /* for text */
+      .floating-textegypt {
+        position: absolute;
+        font-size: 1.2vw;
+        line-height: 4px;
+        top: 72.5%;
+        left: 26.7%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        text-align: center;
+      }
+
+      .bioegypt {
+        position: absolute;
+        font-size: 1.2vw;
+        line-height: 4px;
+        left: 56%;
+        top: -2%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        text-align: center;
+      }
+
+      /* for pictures and text greece */
+
+      #greece.page {
+        text-align: center;
+      }
+
+      .collagegreece {
+        position: relative;
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 18%;
+        display: block;
+      }
+
+      .greececover {
+        position: relative;
+        width: 60%;
+        display: block;
+      }
+
+      /* for text */
+      .floating-textgreece {
+        position: absolute;
+        font-size: 1.2vw;
+        line-height: 4px;
+        top: 26%;
+        left: 9%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        text-align: center;
+      }
+
+      .biogreece {
+        position: absolute;
+        font-size: 1.2vw;
+        line-height: 4px;
+        left: 50%;
+        top: -8%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        text-align: center;
+      }
+
+      .page.active {
+        display: block;
+      }
+    </style>
+    
+    
+    
+    
+    
+    
+  </head>
+  
+  
+  <script>
+      function showPage(pageId) {
+        // Hide all pages
+        document.querySelectorAll('.page').forEach(page => {
+          page.classList.remove('active');
+        });
+
+        // Show the selected page
+        document.getElementById(pageId).classList.add('active');
+      }
+    </script>
+  
+  
+  <body>
+    <nav>
+      <img class="logo" src="logo.png" alt="logo">
+      <a href="https://www.instagram.com/mireillebotros/" class="instagram"><img src="instagram.png" alt="instagram logo"></a>
+      <a href="https://www.tiktok.com/@mirabotros" class="tiktok"><img src="tiktok.png" alt="tiktok logo"></a>
+      <!-- navigation redirections -->
+
+      <a href="#home" class="hoverable" onclick="showPage('home')">HOME</a>
+      <a href="#croatia" class="hoverable" onclick="showPage('croatia')">CROATIA</a>
+      <a href="#toronto" class="hoverable" onclick="showPage('toronto')">TORONTO</a>
+      <a href="#lebanon" class="hoverable" onclick="showPage('lebanon')">LEBANON</a>
+      <a href="#egypt" class="hoverable" onclick="showPage('egypt')">EGYPT</a>
+      <a href="#greece" class="hoverable" onclick="showPage('greece')">GREECE</a>
+    </nav>
+
+
+
+
+
+    <!-- HOME PAGE -->
+    <section id="home" class="page active">
+      <main>
+        <!-- picture of me, overlap text & globe -->
+        <div class="collagehome">
+          <img src="pictureofme.png" alt="picture of me">
+          <div class="floating-texthome">
+            <p>TRAVEL SCRAPBOOK</p>
+            <p>MIREILLE BOTROS</p>
+            <a href="mailto:m3botros@uwaterloo.ca" style="color: white;">Email Me!</a>
+          </div>
+        </div>
+        <img class="globe-image" src="globe.png" alt="picture of globe">
+      </main>
+    </section>
+
+
+
+
+
+    <!-- CROATIA PAGE -->
+    <section id="croatia" class="page">
+      <main>
+        <!-- title page for croatia -->
+        <p>TRAVEL SCRAPBOOK</p>
+        <p>CROATIA</p>
+        <div class="collagecroatia">
+          <div class="floating-textcroatia">
+            <p>Southern Croatia.</p>
+            <p>Dubrovnik, </p>
+          </div>
+          <img class="croatiacover" src="croatiacover.png" alt="croatia cover page">
+        </div>
+        <!-- first collage of picture  -->
+        <div class="div-spacer"></div>
+        <div class="collagecroatia">
+          <img class="croatiacover" src="croatia2.png" alt="croatia collage 2"> </div>
+        <!-- first paragraph -->
+        <div class="collagecroatia">
+          <div class="div-spacer"></div>
+          <div class="biocroatia1">
+            <p>CROATIA WAS A STUNNING SURPRISE MY</p>
+            <p>PARENTS PLANNED. EVERY TIME I MISS</p>
+            <p>SUMMER I REMEMBER CROATIA'S </p>
+            <p>STUNNINGVIEWS, BEAUTIFUL WEATHER, </p>
+            <p>KIND PEOPLE AND THE OVERALL DREAM </p>
+            <p>EXPEIRENCE I HAD THERE DURING MY </p>
+            <p>VISIT. I COMPARE EVERY TRIP I TAKE </p>
+            <p>AFTER THAT ONE TO CROATIA.</p>
+          </div>
+        </div>
+        <!-- second paragraph-->
+        <div class="div-spacer"></div>
+        <div class="collagecroatia">
+          <div class="div-spacer"></div>
+          <div class="biocroatia2">
+            <p>A COUNTRY THAT WITHSTOOD WARS AND</p>
+            <p>DESTRUCTION, IT'S PEOPOLE HAVE DONE</p>
+            <p>AN AMAZING JOB AT RESTORING AND </p>
+            <p>PERSERVING IT'S HISOTORY AND BEAUTY.</p>
+            <p>ALONG WITH IT'S OBVIOUS VISUAL</p>
+            <p>AESTHETIC, I LEARNED SO MUCH </p>
+            <p>ABOUT IT'S HISTORIC BEAUTY, STORY AND</p>
+            <p>PEOPLE. I CAME TO APPRECIATE AND LOVE</p>
+            <p>IT FOR MUCH MORE THAN ITS VIEWS.</p>
+          </div>
+          <!-- second collage of pictures -->
+          <img class="croatiacover" src="croatia3.png" alt="croatia collage 3">
+        </div>
+      </main>
+    </section>
+
+
+
+
+
+
+    <!-- TORONTO PAGE -->
+    <section id="toronto" class="page">
+      <main>
+        <!-- title page for toronto -->
+        <p>TRAVEL SCRAPBOOK</p>
+        <p>TORONTO</p>
+        <div class="collagetoronto">
+          <img class="torontocover" src="torontocover.png" alt="toronto cover page">
+          <div class="floating-texttoronto">
+            <p>Queen Street West</p>
+            <p>&amp Yorkville</p>
+          </div>
+        </div>
+        <!-- first collage of picture  -->
+        <div class="div-spacer"></div>
+        <div class="collagetoronto">
+          <img class="torontocover" src="toronto2.png" alt="toronto collage 2"> </div>
+        <!-- paragraph -->
+        <div class="collagetoronto">
+          <div class="div-spacer"></div>
+          <div class="biotoronto">
+            <p>GOING TO TORONTO WITH MY FRIENDS HAS ALWAYS</p>
+            <p>BEEN A GO-TO ESCAPE FROM THE BORING QUITE LIFE WE</p>
+            <p>HAVE BACK AT HOME. A QUICK 45 MINUTE TRAIN LATER,</p>
+            <p>WE BECOME OUR MOST CONFIDENT SELVES. DRESSING UP, </p>
+            <p>GOING TO THE CITY AND OUT TO EAT AT RESTAURANTS LIKE </p>
+            <p>SOFIA'S, CANOE, JACOB'S, THE CHASE OR SOTTO SOTTO </p>
+            <p>THIS YEAR HAVE BEEN SOME OF MY BEST MEMORIES. </p>
+            <p>PLANS LIKE THESE BRINGS ALL MY FRIENDS TOGETHER</p>
+            <p>WHERE WE'RE ALL GLAMMED UP AND HAVING A GOOD TIME</p>
+            <p>IS AN OPPORTUNITY I DON'T WANT TO EVER MISS.</p>
+          </div>
+          <!-- second collage of pictures -->
+          <div class="div-spacer"></div>
+          <img class="torontocover" src="toronto3.png" alt="toronto collage 3">
+        </div>
+      </main>
+    </section>
+
+
+
+
+
+
+    <!-- LEBANON PAGE -->
+    <section id="lebanon" class="page">
+      <main>
+        <!-- title page for lebanon -->
+        <p>TRAVEL SCRAPBOOK</p>
+        <p>LEBANON</p>
+        <div class="collagelebanon">
+          <img class="lebanoncover" src="lebanoncover.png" alt="lebanon cover page">
+          <div class="floating-textlebanon">
+            <p>Hadath, Lebanon</p>
+            <p>Hasroun, Lebanon</p>
+          </div>
+        </div>
+        <!-- paragraph -->
+        <div class="collagelebanon">
+          <div class="div-spacer"></div>
+          <div class="div-spacer"></div>
+          <div class="biolebanon">
+            <p>LEBANON WAS MY MOST SPONTANEOUS ADVENTURE.</p>
+            <p>ON A PLANNED TRIP TO EGYPT I MET UP WITH MY</p>
+            <p> MOM'S HIGHSCHOOL FRIENDS WHO THEN INVITED</p>
+            <p>ME TO GO TO LEBANON WITH THEM IN 2 DAYS. I HAD</p>
+            <p>NEVER SAID YES SO EASILY, AND I STILL CAN'T BELIEVE</p>
+            <p>HOW LUCKY I AM TO HAVE EXPERIENCED THE BEAUTY</p>
+            <p>OF LEBANON. EVERYWHERE WE WENT WAS FILLED </p>
+            <p>WITH CREATIVITY LOVE AND CARE.</p>
+          </div>
+          <!-- first collage of picture  -->
+          <div class="collagelebanon">
+            <img class="lebanon2" src="lebanon2.png" alt="lebanon collage 2"> </div>
+          <!-- second collage of pictures -->
+          <div class="div-spacer"></div>
+          <img class="lebanon3" src="lebanon3.png" alt="lebanon collage 3">
+        </div>
+      </main>
+    </section>
+
+
+
+
+
+    <!-- EGYPT PAGE -->
+    <section id="egypt" class="page">
+      <main>
+        <!-- title page for egypt -->
+        <p>TRAVEL SCRAPBOOK</p>
+        <p>EGYPT</p>
+        <div class="collageegypt">
+          <img class="egyptcover" src="egyptcover.png" alt="egypt cover page">
+          <div class="floating-textegypt">
+            <p>Sahel, Cairo, Giza, Luxor </p>
+          </div>
+        </div>
+        <!-- first collage of picture  -->
+        <div class="div-spacer"></div>
+        <div class="collageegypt">
+          <img class="egyptcover" src="egypt2.png" alt="egypt collage 2"> </div>
+        <!-- paragraph -->
+        <div class="collageegypt">
+          <div class="div-spacer"></div>
+          <div class="bioegypt">
+            <p>HOME. MY HERITAGE AND MY</p>
+            <p>CULTURE. I AM SO LUCKY TO BE</p>
+            <p>ABLE TO CALL EGYPT MY HOME,</p>
+            <p>MY ORIGINS. I VISIT AT LEAST</p>
+            <p>ONCE A YEAR, NOT ONLY TO SEE </p>
+            <p>MY FAMILY, WHO ALL STILL LIVE </p>
+            <p>THERE, BUT ALSO TO ENJOY THE</p>
+            <p>BEST BEACHES I HAVE EVER BEEN TO,</p>
+            <p>THE AMAZING FOOD, VIBRANT PEOPLE,</p>
+            <p>AND BEAUTIFUL CULTURE.</p>
+            <p>VISITING HOME HAS ALWAYS BEEN</p>
+            <p>A LUXURY AND PLEASURE THAT I</p>
+            <p>LOOK FORWARD TO. EVERY VISIT </p>
+            <p>I TAKE I EXPERIENCE SOMETHING NEW,</p>
+            <p>OLD, HISTORIC, MODERN OR TOURISTIC. </p>
+            <p>***</p>
+            <p>THE PYRAMIDS, NEW MUSEUMS,</p>
+            <p>BEACHES, HISTORIC ARTIFACTS AND</p>
+            <p>STATUES, THE SECRET CLUBS AND </p>
+            <p>ATTENDING BRAND EVENTS IN HIDDEN</p>
+            <p>BEACH COMPOUNDS, EGYPT IS A NEVER</p>
+            <p>ENDING WONDERLAND. I CAN'T WAIT </p>
+            <p>FOR MY NEXT VISIT HOME TO SEE WHAT</p>
+            <p>NEW THINGS I WILL EXPERIENCE, </p>
+            <p>NEW PEOPLE I WILL MEET, AND </p>
+            <p>BEAUTIFUL PICTURES I WILL TAKE, </p>
+            <p>ALTHOUGH THEY CAN NEVER CAPTURE</p>
+            <p>IT'S REAL BEAUTY.</p>
+          </div>
+          <!-- second and third collage of pictures -->
+          <div class="div-spacer"></div>
+          <img class="egyptcover" src="egypt3.png" alt="egypt collage 3">
+          <div class="div-spacer"></div>
+          <img class="egyptcover" src="egypt4.png" alt="egypt collage 4">
+        </div>
+      </main>
+    </section>
+
+
+
+
+    <!-- GREECE PAGE -->
+    <section id="greece" class="page">
+      <main>
+        <!-- title page for greece -->
+        <p>TRAVEL SCRAPBOOK</p>
+        <p>GREECE</p>
+        <div class="collagegreece">
+          <img class="greececover" src="greececover.png" alt="greece cover page">
+          <div class="floating-textgreece">
+            <p>santorini &amp athens</p>
+          </div>
+        </div>
+        <!-- first and second collage of picture  -->
+        <div class="div-spacer"></div>
+        <div class="collagegreece">
+          <img class="greececover" src="greece2.png" alt="greece collage 2">
+          <div class="div-spacer"></div>
+          <img class="greececover" src="greece3.png" alt="greece collage 3">
+        </div>
+        <!-- paragraph -->
+        <div class="collagegreece">
+          <div class="div-spacer"></div>
+          <div class="biogreece">
+            <p>EVERYONE TALKS ABOUT HOW GREECE IS A </p>
+            <p>PLACE YOU HAVE TO VISIT AT LEAST ONCE </p>
+            <p>IN YOUR LIFETIME, AND I AM OFTEN SKEPTICAL </p>
+            <p>ABOUT WHAT OTHERS SAY, I MEAN LOOK HOW </p>
+            <p>THE PARIS ROMANTICIZATION TURNED OUT. BUT</p>
+            <p>GRECE REALLY WAS EVERYTHING PEOPLE SAID IT </p>
+            <p>WAS, AND MORE. EXCEPTIONAL VIEWS, FOOD AND </p>
+            <p>MOST IMPORTANTLY PEACE. I HAD NEVER FELT SO </p>
+            <p>RELAXED. IT WAS SUCH A PERFECT VACATION, </p>
+            <p>AND I HOPE I GET TO GO AGAIN AND SOON, </p>
+            <p>ESPECIALLY SANTORINI &AMP ATHENS. </p>
+          </div>
+          <!-- third collage of pictures -->
+          <img class="greececover" src="greece4.png" alt="greece collage 4">
+        </div>
+      </main>
+    </section>
+    
+ 
+
+  </body>
+</html>
